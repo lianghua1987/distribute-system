@@ -31,5 +31,17 @@ Sudo apt install yum
 sudo apt install yum-utils
 ```
 
+Docker Steps:
+
+```
+docker search tomcat
+docker pull tomcat:latest
+sudo docker run --name mytomcat -d 33e02377a00f //deamond
+docker stop CONTAINER_ID
+docker rm CONTAINER_ID
+docker run --name mytomcat -p  8888:8080 tomcat
+-p: port mapping -> HOST_PORT:CONTAINER_PORT
+```
+
 
 
