@@ -41,7 +41,12 @@ docker stop CONTAINER_ID
 docker rm CONTAINER_ID
 docker run --name mytomcat -p  8888:8080 tomcat
 -p: port mapping -> HOST_PORT:CONTAINER_PORT
+docker logs CONTAINER_ID
 ```
 
+Run Mysql
 
+```
+sudo docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=root -d mysql
+```
 
